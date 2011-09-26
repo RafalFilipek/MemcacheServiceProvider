@@ -1,11 +1,11 @@
 <?php
 
-namespace Rafal\MemcacheExtension;
+namespace Rafal\MemcacheServiceProvider;
 
 use Silex\Application;
-use Silex\ExtensionInterface;
+use Silex\ServiceProviderInterface;
 
-class MemcacheExtension implements ExtensionInterface {
+class MemcacheServiceProvider implements ServiceProviderInterface {
     
     public function register(Application $app)
     {
@@ -13,7 +13,7 @@ class MemcacheExtension implements ExtensionInterface {
             if (isset($app['memcache.wrapper'])) {
                 $lib = $app['memcache.wrapper'] === false ? false : $app['memcache.wrapper'];
             } else {
-                $lib = 'Rafal\MemcacheExtension\MemcacheWrapper';
+                $lib = 'Rafal\MemcacheServiceProvider\MemcacheWrapper';
             }
             if (!isset($app['memcache.class'])) {
                 $class = '\Memcache';

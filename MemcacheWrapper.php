@@ -1,6 +1,6 @@
 <?php
 
-namespace Rafal\MemcacheExtension;
+namespace Rafal\MemcacheServiceProvider;
 
 class MemcacheWrapper {
     
