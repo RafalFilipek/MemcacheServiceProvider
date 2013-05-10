@@ -36,4 +36,6 @@ class MemcacheServiceProvider implements ServiceProviderInterface {
             return $memcache;
         });
     }
+
+    public function boot(Application $app) {}
 }
