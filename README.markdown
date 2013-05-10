@@ -15,7 +15,12 @@ Installation (submodule)
 
 Registering
 -----------
-    $app['autoloader']->registerNamespace('Rafal', __DIR__.'/vendor/rafal/src');
+In your composer.json file add this to your autoload psr
+    
+    "Rafal" : "vendor/rafal/src/"
+
+Then register it
+
     $app->register(new Rafal\MemcacheServiceProvider\MemcacheServiceProvider());
 
 Options
@@ -28,7 +33,6 @@ Example
 -------
 Lets say you have DoctrineServiceProvider enabled and you want to fetch some data from User table.
 
-    $app['autoloader']->registerNamespace('Rafal', __DIR__.'/vendor/rafal/src');
     $app->register(new Rafal\MemcacheServiceProvider\MemcacheServiceProvider());
     $app['memcache']->get('user.7', function() use($app) { 
         return $app['db']->fetchAssoc('SELECT * FROM Users WHERE id = 7')
