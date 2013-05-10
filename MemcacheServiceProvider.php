@@ -23,6 +23,12 @@ class MemcacheServiceProvider implements ServiceProviderInterface {
                     throw new \Exception("Unknow class {$class}. Please set 'Memcache' or 'Memcached'");
                 }
             }
+            
+            if (!class_exists($class))
+            {
+                throw new \Exception('No ' . $class . ' found');
+            }
+
             $memcacheInstance = new $class;
             $connections = isset($app['memcache.connections']) ? $app['memcache.connections'] : array(array('127.0.0.1', 11211));
             foreach ($connections as $connection) {
