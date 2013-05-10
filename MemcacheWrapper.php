@@ -31,4 +31,8 @@ class MemcacheWrapper {
         return $this->memcache->delete($id, $time);
     }
 
+    public function flush()
+    {
+        return $this->memcache->flush();
+    }
 }
