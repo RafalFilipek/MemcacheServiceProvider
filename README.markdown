@@ -42,6 +42,11 @@ Lets say you have DoctrineServiceProvider enabled and you want to fetch some dat
 
 As you can see ```get``` method allows you to pass as a second argument function which will be executed if data are not exists in memcache. This functionality is provided by ```MemcacheWrapper```.
 
+Contributors
+------------
+
+ - [Carl Markham](https://github.com/doddsey65)
+
 License
 -------
 Memcache Service Provider is licensed under the MIT license.
