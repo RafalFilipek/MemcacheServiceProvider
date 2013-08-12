@@ -1,5 +1,5 @@
 {
-    "name": "rafalfilipek/memcache-service-provider",
+    "name": "rafalfilipek/memcache",
     "description": "Silex Memcache Service Provider",
     "keywords": ["silex", "memcache", "memcached"],
     "homepage": "https://github.com/firatagdas/MemcacheServiceProvider-1",
@@ -19,6 +19,7 @@
             "Rafal": ["src/"]
         }
     },
+    "target-dir": "src",
     "minimum-stability": "dev"
 }
 
