@@ -39,6 +39,7 @@ class MemcacheServiceProvider implements ServiceProviderInterface {
             } else {
                 $memcache = $memcacheInstance;
             }
+            $app['memcache.instance'] = $memcacheInstance;
             return $memcache;
         });
     }
