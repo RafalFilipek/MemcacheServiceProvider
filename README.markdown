@@ -12,6 +12,20 @@ Installation (submodule)
 ------------------------
     cd /path/to/your/project
     git submodule add git://github.com/RafalFilipek/MemcacheServiceProvider.git vendor/rafal/src/Rafal/MemcacheServiceProvider
+    
+Installation (composer)
+------------------------
+Add this code to your composer.json file
+
+    "require": {
+        "rafalfilipek/memcache": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/firatagdas/MemcacheServiceProvider-1.git"
+        }
+    ]
 
 Registering
 -----------

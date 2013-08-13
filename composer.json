@@ -1,0 +1,25 @@
+{
+    "name": "rafalfilipek/memcache",
+    "description": "Silex Memcache Service Provider",
+    "keywords": ["silex", "memcache", "memcached"],
+    "homepage": "https://github.com/firatagdas/MemcacheServiceProvider-1",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafal Filipek",
+            "email": ""
+        }
+    ],
+    "require": {
+        "silex/silex": "~1.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Rafal": ["src/"]
+        }
+    },
+    "target-dir": "src/Rafal/MemcacheServiceProvider",
+    "minimum-stability": "dev"
+}
+
