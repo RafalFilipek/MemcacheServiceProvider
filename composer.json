@@ -19,7 +19,7 @@
             "Rafal": ["src/"]
         }
     },
-    "target-dir": "src/MemcacheServiceProvider",
+    "target-dir": "src/Rafal/MemcacheServiceProvider",
     "minimum-stability": "dev"
 }
 
